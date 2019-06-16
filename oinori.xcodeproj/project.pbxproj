@@ -12,9 +12,14 @@
 		D5D5659B22B66DB500240BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D5659922B66DB500240BD9 /* Main.storyboard */; };
 		D5D5659D22B66DB800240BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D5659C22B66DB800240BD9 /* Assets.xcassets */; };
 		D5D565A022B66DB800240BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D5659E22B66DB800240BD9 /* LaunchScreen.storyboard */; };
+		D5D565AA22B66ECB00240BD9 /* UISwitchMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D565A922B66ECB00240BD9 /* UISwitchMini.swift */; };
+		F46E1156E182EC4A9543D1E2 /* Pods_oinori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D2D1A8E67D3307817A682B /* Pods_oinori.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23D2D1A8E67D3307817A682B /* Pods_oinori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oinori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ED9A345A2B471B497FC3155 /* Pods-oinori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oinori.release.xcconfig"; path = "Pods/Target Support Files/Pods-oinori/Pods-oinori.release.xcconfig"; sourceTree = "<group>"; };
+		A9AB00FE71C9DCCF67836157 /* Pods-oinori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oinori.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oinori/Pods-oinori.debug.xcconfig"; sourceTree = "<group>"; };
 		D5D5659222B66DB500240BD9 /* oinori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oinori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D5659522B66DB500240BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5D5659722B66DB500240BD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		D5D5659C22B66DB800240BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5D5659F22B66DB800240BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5D565A122B66DB800240BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D565A922B66ECB00240BD9 /* UISwitchMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchMini.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46E1156E182EC4A9543D1E2 /* Pods_oinori.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25A83ABA859789553CFF98DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23D2D1A8E67D3307817A682B /* Pods_oinori.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		600E02682F7EA19AD283DC0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB00FE71C9DCCF67836157 /* Pods-oinori.debug.xcconfig */,
+				2ED9A345A2B471B497FC3155 /* Pods-oinori.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D5D5658922B66DB500240BD9 = {
 			isa = PBXGroup;
 			children = (
 				D5D5659422B66DB500240BD9 /* oinori */,
 				D5D5659322B66DB500240BD9 /* Products */,
+				600E02682F7EA19AD283DC0A /* Pods */,
+				25A83ABA859789553CFF98DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		D5D5659422B66DB500240BD9 /* oinori */ = {
 			isa = PBXGroup;
 			children = (
+				D5D565A822B66E9E00240BD9 /* uiswitch */,
 				D5D5659522B66DB500240BD9 /* AppDelegate.swift */,
 				D5D5659722B66DB500240BD9 /* ViewController.swift */,
 				D5D5659922B66DB500240BD9 /* Main.storyboard */,
@@ -64,6 +91,14 @@
 			path = oinori;
 			sourceTree = "<group>";
 		};
+		D5D565A822B66E9E00240BD9 /* uiswitch */ = {
+			isa = PBXGroup;
+			children = (
+				D5D565A922B66ECB00240BD9 /* UISwitchMini.swift */,
+			);
+			path = uiswitch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5D565A422B66DB800240BD9 /* Build configuration list for PBXNativeTarget "oinori" */;
 			buildPhases = (
+				EDF83706B63CC517A93625D9 /* [CP] Check Pods Manifest.lock */,
 				D5D5658E22B66DB500240BD9 /* Sources */,
 				D5D5658F22B66DB500240BD9 /* Frameworks */,
 				D5D5659022B66DB500240BD9 /* Resources */,
+				20087D924DA3F643D2AE70A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +167,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20087D924DA3F643D2AE70A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-oinori/Pods-oinori-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RAMPaperSwitch/RAMPaperSwitch.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMPaperSwitch.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-oinori/Pods-oinori-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF83706B63CC517A93625D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oinori-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5D5658E22B66DB500240BD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +213,7 @@
 			files = (
 				D5D5659822B66DB500240BD9 /* ViewController.swift in Sources */,
 				D5D5659622B66DB500240BD9 /* AppDelegate.swift in Sources */,
+				D5D565AA22B66ECB00240BD9 /* UISwitchMini.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,15 +357,13 @@
 		};
 		D5D565A522B66DB800240BD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AB00FE71C9DCCF67836157 /* Pods-oinori.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SKGH3PPX4X;
 				INFOPLIST_FILE = oinori/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yodaaa.oinori;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -298,15 +373,13 @@
 		};
 		D5D565A622B66DB800240BD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED9A345A2B471B497FC3155 /* Pods-oinori.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SKGH3PPX4X;
 				INFOPLIST_FILE = oinori/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yodaaa.oinori;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
