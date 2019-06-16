@@ -11,6 +11,8 @@
 		D5CC42A122B6A20D00012251 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CC42A022B6A20D00012251 /* RealmSwift.framework */; };
 		D5CC42A322B6A21100012251 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CC42A222B6A21100012251 /* Realm.framework */; };
 		D5CC42A622B6A3E000012251 /* omedetoTemplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC42A522B6A3E000012251 /* omedetoTemplete.swift */; };
+		D5CC42A922B6A47400012251 /* oinori.csv in Resources */ = {isa = PBXBuildFile; fileRef = D5CC42A822B6A47400012251 /* oinori.csv */; };
+		D5CC42AB22B6A49700012251 /* omedeto.csv in Resources */ = {isa = PBXBuildFile; fileRef = D5CC42AA22B6A49700012251 /* omedeto.csv */; };
 		D5D5659622B66DB500240BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5659522B66DB500240BD9 /* AppDelegate.swift */; };
 		D5D5659822B66DB500240BD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5659722B66DB500240BD9 /* ViewController.swift */; };
 		D5D5659B22B66DB500240BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D5659922B66DB500240BD9 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		D5CC42A022B6A20D00012251 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CC42A222B6A21100012251 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CC42A522B6A3E000012251 /* omedetoTemplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = omedetoTemplete.swift; sourceTree = "<group>"; };
+		D5CC42A822B6A47400012251 /* oinori.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = oinori.csv; sourceTree = "<group>"; };
+		D5CC42AA22B6A49700012251 /* omedeto.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = omedeto.csv; sourceTree = "<group>"; };
 		D5D5659222B66DB500240BD9 /* oinori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oinori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D5659522B66DB500240BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5D5659722B66DB500240BD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,15 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		D5CC42A722B6A44F00012251 /* csv */ = {
+			isa = PBXGroup;
+			children = (
+				D5CC42A822B6A47400012251 /* oinori.csv */,
+				D5CC42AA22B6A49700012251 /* omedeto.csv */,
+			);
+			path = csv;
+			sourceTree = "<group>";
+		};
 		D5D5658922B66DB500240BD9 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +122,7 @@
 		D5D5659422B66DB500240BD9 /* oinori */ = {
 			isa = PBXGroup;
 			children = (
+				D5CC42A722B6A44F00012251 /* csv */,
 				D5D565A822B66E9E00240BD9 /* uiswitch */,
 				D5CC42A422B6A2B100012251 /* view */,
 				D5CC429D22B6A17500012251 /* model */,
@@ -189,7 +203,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CC42A922B6A47400012251 /* oinori.csv in Resources */,
 				D5D565A022B66DB800240BD9 /* LaunchScreen.storyboard in Resources */,
+				D5CC42AB22B6A49700012251 /* omedeto.csv in Resources */,
 				D5D5659D22B66DB800240BD9 /* Assets.xcassets in Resources */,
 				D5D5659B22B66DB500240BD9 /* Main.storyboard in Resources */,
 			);
