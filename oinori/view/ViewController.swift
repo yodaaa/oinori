@@ -44,15 +44,19 @@ class ViewController: UIViewController {
         if  let name = sender.name {
             if name == "Ome" {
                 if sender.direction == .right {
-                    print("OmeRight")
+                    omedetoSwitch.setOn(true, animated: true)
+                    //print("OmeRight")
                 } else if sender.direction == .left {
-                    print("OmeLeft")
+                    omedetoSwitch.setOn(false, animated: true)
+                    //print("OmeLeft")
                 }
             } else if name == "Oi" {
                 if sender.direction == .right {
-                    print("OiRight")
+                    oinoriSwitch.setOn(true, animated: true)
+                    //print("OiRight")
                 } else if sender.direction == .left {
-                    print("OiLeft")
+                    oinoriSwitch.setOn(false, animated: true)
+                    //print("OiLeft")
                 }
             }
         }
