@@ -14,3 +14,6 @@ iPhoneXS
   * データ保存用
 * paper-switch(https://github.com/Ramotion/paper-switch)
   * on/offスイッチのUIに採用
+
+## 画面
+<img src="https://user-images.githubusercontent.com/13346021/59574835-b9319d80-90f3-11e9-81bf-feecee71f6e9.png" width=50%>
