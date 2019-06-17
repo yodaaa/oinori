@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 import RAMPaperSwitch
 
 class ViewController: UIViewController {
@@ -37,6 +38,21 @@ class ViewController: UIViewController {
         leftSwipeOinori.direction = .left
         leftSwipeOinori.name = "Oi"
         oinoriView.addGestureRecognizer(leftSwipeOinori)
+        
+        let content = UNMutableNotificationContent()
+        content.title = "株式会社〇〇"
+        content.subtitle = "選考結果のお知らせ" // 新登場！
+        content.body = "××採用担当××でございます。この度は、××の採用にご興味をお持ちいただきまして誠に有難うございました。"
+        content.sound = UNNotificationSound.default
+        
+        // 5秒後に発火
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        let request = UNNotificationRequest(identifier: "FiveSecond",
+                                            content: content,
+                                            trigger: trigger)
+        
+        // ローカル通知予約
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
 
     @objc final func didSwipe(sender: UISwipeGestureRecognizer) {
