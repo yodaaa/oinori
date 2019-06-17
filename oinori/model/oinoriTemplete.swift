@@ -14,6 +14,20 @@ class OinoriTemplete: Object {
     dynamic var title: String = ""
     dynamic var message: String = ""
     
+    // データを保存。
+    func save() {
+        let realm = try! Realm()
+        if realm.isInWriteTransaction {
+            if self.id == 0 { self.id = self.createNewId() }
+            realm.add(self, update: true)
+        } else {
+            try! realm.write {
+                if self.id == 0 { self.id = self.createNewId() }
+                realm.add(self, update: true)
+            }
+        }
+    }
+    
     // 新しいIDを採番します。
     private func createNewId() -> Int {
         let realm = try! Realm()
