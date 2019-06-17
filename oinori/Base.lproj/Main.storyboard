@@ -136,6 +136,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="oinoriSwitch" destination="p3g-JT-8E6" id="JX8-QZ-aSZ"/>
+                        <outlet property="oinoriView" destination="0KG-Mw-1NA" id="JTQ-tK-pYi"/>
+                        <outlet property="omedetoSwitch" destination="gPx-fF-3lo" id="sjR-rP-MqU"/>
+                        <outlet property="omedetoView" destination="ks0-Bq-83j" id="cQg-0E-1p4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

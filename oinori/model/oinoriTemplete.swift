@@ -14,6 +14,7 @@ class OinoriTemplete: Object {
     dynamic var title: String = ""
     dynamic var message: String = ""
     
+
     // データを保存。
     func save() {
         let realm = try! Realm()
