@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D53B88CB22B7739D00CAB155 /* RandomNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B88CA22B7739D00CAB155 /* RandomNotification.swift */; };
 		D5CC429F22B6A19D00012251 /* oinoriTemplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC429E22B6A19D00012251 /* oinoriTemplete.swift */; };
 		D5CC42A122B6A20D00012251 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CC42A022B6A20D00012251 /* RealmSwift.framework */; };
 		D5CC42A322B6A21100012251 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CC42A222B6A21100012251 /* Realm.framework */; };
@@ -26,6 +27,7 @@
 		23D2D1A8E67D3307817A682B /* Pods_oinori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oinori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED9A345A2B471B497FC3155 /* Pods-oinori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oinori.release.xcconfig"; path = "Pods/Target Support Files/Pods-oinori/Pods-oinori.release.xcconfig"; sourceTree = "<group>"; };
 		A9AB00FE71C9DCCF67836157 /* Pods-oinori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oinori.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oinori/Pods-oinori.debug.xcconfig"; sourceTree = "<group>"; };
+		D53B88CA22B7739D00CAB155 /* RandomNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNotification.swift; sourceTree = "<group>"; };
 		D5CC429E22B6A19D00012251 /* oinoriTemplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oinoriTemplete.swift; sourceTree = "<group>"; };
 		D5CC42A022B6A20D00012251 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CC42A222B6A21100012251 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				D5D5659C22B66DB800240BD9 /* Assets.xcassets */,
 				D5D5659E22B66DB800240BD9 /* LaunchScreen.storyboard */,
 				D5D565A122B66DB800240BD9 /* Info.plist */,
+				D53B88CA22B7739D00CAB155 /* RandomNotification.swift */,
 			);
 			path = oinori;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5D5659822B66DB500240BD9 /* ViewController.swift in Sources */,
+				D53B88CB22B7739D00CAB155 /* RandomNotification.swift in Sources */,
 				D5CC42A622B6A3E000012251 /* omedetoTemplete.swift in Sources */,
 				D5D5659622B66DB500240BD9 /* AppDelegate.swift in Sources */,
 				D5D565AA22B66ECB00240BD9 /* UISwitchMini.swift in Sources */,

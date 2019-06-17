@@ -53,7 +53,18 @@ class ViewController: UIViewController {
         
         // ローカル通知予約
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
+        
+        //Timer
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(ViewController.timerfunc), userInfo: nil, repeats: true)
     }
+    
+    @objc func timerfunc(){
+        let rNotify = RandomNotification()
+        rNotify.hit = .Large
+        rNotify.randomNotification()
+    }
+    
 
     @objc final func didSwipe(sender: UISwipeGestureRecognizer) {
         
