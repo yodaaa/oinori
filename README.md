@@ -16,4 +16,4 @@ iPhoneXS
   * on/offスイッチのUIに採用
 
 ## 画面
-![](https://github.com/yodaaa/oinori/blob/images/Simulator Screen Shot - iPhone Xʀ - 2019-06-16 at 22.46.38.png)
+![](https://github.com/yodaaa/oinori/blob/images/screenshot1.png)
