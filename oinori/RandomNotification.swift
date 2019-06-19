@@ -29,14 +29,27 @@ class RandomNotification: Any {
         }
     }
     var hit: notificationVolume = .Small
-    var title: String = "株式会社〇〇"
-    var subtitle: String = "選考結果のお知らせ"
-    var body: String = "××採用担当××でございます。この度は、××の採用にご興味をお持ちいただきまして誠に有難うございました。"
+    var title: String
+    var subtitle: String
+    var body: String
+    
+    
+    // テンプレート通知内容(omedeto)
+    private var omedetoTitleTemp: String = "株式会社〇〇"
+    private var omedetoSubTitleTemp: String = "選考結果のお知らせ"
+    private var omedetoBodyTemp: String = "××採用担当××でございます。この度は、××の採用にご興味をお持ちいただきまして誠に有難うございました。"
+    
+    // テンプレート通知内容(oinori)
+    private var oinoriTitleTemp: String = "株式会社〇〇"
+    private var oinoriSubTitleTemp: String = "選考結果のお知らせ"
+    private var oinoriBodyTemp: String = "××採用担当××でございます。この度は、××の採用にご興味をお持ちいただきまして誠に有難うございました。"
+    
+    
     
     init(title: String = "", subtitle: String = "", body: String = "") {
-        self.title = title
-        self.subtitle = subtitle
-        self.body = body
+        self.title = title == "" ? oinoriTitleTemp : title
+        self.subtitle = subtitle == "" ? oinoriSubTitleTemp : subtitle
+        self.body = body == "" ? oinoriBodyTemp : body
     }
     
     

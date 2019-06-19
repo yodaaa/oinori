@@ -63,6 +63,9 @@ class ViewController: UIViewController {
         let rNotify = RandomNotification()
         rNotify.hit = .Large
         rNotify.randomNotification()
+        
+        let rNotify2 = RandomNotification(title: "株式会社cc", subtitle: "選考結果のお知らせ(最終)", body: "先日はありがとうございました。")
+        rNotify2.randomNotification()
     }
     
 
